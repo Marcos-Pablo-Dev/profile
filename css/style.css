@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "inter";
+    src: url('../assets/fonts/static/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url('../assets/fonts/static/Inter-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url('../assets/fonts/static/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+/*-- global --*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    width: 100svw;
+    min-height: 100svh;
+    background-color: var(--color-grey-900);
+    color: var(--color-white);
+    font-family: "inter";
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+    /*-- Profile --*/
+
+.container-profile {
+    display: flex;
+    width: 400px;
+    padding: 40px;
+    background-color: var(--color-grey-800);
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.h1-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-green);
+    text-align: center;
+}
+
+
+
+    /*-- Social-Networks --*/
+
+.ul-social-networks {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.links-profile {
+    display: block;
+    background-color: var(--color-grey-700);
+    padding: 16px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.links-profile:active {
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
+
+
+    /*-- Attribuition --*/
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-top: 10px;
+}
+.attribution a { 
+    color: var(--color-green); 
+}
+
+@media (max-width: 420px) {
+    .container-profile {
+        width: 320px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 340px) {    
+    .container-profile {
+        width: 100%;
+    }
+}
